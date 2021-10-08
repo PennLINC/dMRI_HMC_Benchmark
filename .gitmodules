@@ -2,3 +2,4 @@
 	path = inputs/data
 	url = /cbica/projects/Shoreline/full_benchmark/shoreline-benchmark/analysis/../phantoms
 	datalad-id = 26f4783a-d939-4180-80cc-e88dffb7545e
+	datalad-url = ../phantoms
