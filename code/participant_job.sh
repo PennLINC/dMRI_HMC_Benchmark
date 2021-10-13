@@ -24,7 +24,7 @@ motion_severity="${10}"
 cd /cbica/comp_space/$(basename $HOME)
 
 # Used for the branch names and the temp dir
-BRANCH="job-${JOB_ID}-${method}-${scheme}-${noise}-${PERCENT_MOTION}-${transform}-${denoise}-${simnum}"
+BRANCH="job-${JOB_ID}-${method}-${scheme}-${noise}-${motion_severity}-${PERCENT_MOTION}-${transform}-${denoise}-${simnum}"
 mkdir ${BRANCH}
 cd ${BRANCH}
 

@@ -17,7 +17,7 @@ PERCENT_MOTION=15
 NUM_PERMS=10
 #DENOISERS="dwidenoise none patch2self"
 DENOISERS="dwidenoise"
-MOTION_SEVERITY="highmotion"
+MOTION_SEVERITY="high"
 
 getreq(){
     case $1 in
@@ -55,7 +55,7 @@ running_branches=$(qstat -r | grep "Full jobname" | tr -s ' ' | cut -d ' ' -f 4 
 
 submit_unfinished(){
 
-    BRANCH="${method}-${scheme}-${noise}-${PERCENT_MOTION}-${transform}-${denoise}-${simnum}"
+    BRANCH="${method}-${scheme}-${noise}-${motion_severity}-${PERCENT_MOTION}-${transform}-${denoise}-${simnum}"
     branch_ok=$(echo $branches | grep "${BRANCH}," | wc -c)
     branch_submitted=$(echo $running_branches | grep "${BRANCH}," | wc -c)
 
