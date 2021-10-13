@@ -7,8 +7,8 @@ permutation_number="$4"
 hmc_method="$5"
 transform="$6"
 denoise="$7"
-motion_severity="$9"
-outputname="$8"
+motion_severity="$8"
+outputname="$9"
 
 CONTAINER=containers/images/bids/bids-qsiprep--0.14.3.sing
 SOURCEBIND='-B /cbica/projects/Shoreline/code/qsiprep/qsiprep:/usr/local/miniconda/lib/python3.7/site-packages/qsiprep'

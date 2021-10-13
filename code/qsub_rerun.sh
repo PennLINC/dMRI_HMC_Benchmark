@@ -17,6 +17,7 @@ PERCENT_MOTION=15
 NUM_PERMS=10
 #DENOISERS="dwidenoise none patch2self"
 DENOISERS="dwidenoise"
+MOTION_SEVERITY="highmotion"
 
 getreq(){
     case $1 in
@@ -92,12 +93,11 @@ submit_unfinished(){
                     ${simnum} \
                     ${method} \
                     ${transform} \
-                    ${denoise}
+                    ${denoise} \
+                    ${MOTION_SEVERITY}
             set -x
+            exit 0
         fi
-
-    else
-
     fi
 }
 
