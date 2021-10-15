@@ -44,6 +44,7 @@ then
             --fs-license-file code/license.txt \
             --skip-bids-validation \
             --denoise-method ${denoise} \
+            --dwi-only \
             --eddy-config code/quadratic.json \
             --output-resolution 2.0
     else
@@ -59,6 +60,7 @@ then
             --stop-on-first-crash \
             --fs-license-file code/license.txt \
             --skip-bids-validation \
+            --dwi-only \
             --denoise-method ${denoise} \
             --output-resolution 2.0
     fi
@@ -80,6 +82,7 @@ else
         --hmc-model 3dSHORE \
         --hmc_transform ${transform} \
         --shoreline-iters 2 \
+        --dwi-only \
         --b0-motion-corr-to first \
         --denoise-method ${denoise} \
         --output-resolution 2.0
