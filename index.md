@@ -20,7 +20,6 @@ TBD
 Phil Cook, Tinashe M. Tapera, Scott T. Grafton, Mark A. Elliott, 
 David R. Roalf, Desmond J. Oathes, Danielle S. Bassett
 
-
 ### Project Start Date
 
 Early 2019
