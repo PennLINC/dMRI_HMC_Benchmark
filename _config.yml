@@ -1,4 +1,4 @@
 title: <br> 
 logo: ./Figure1.png
 description: DMRI head motion correction algorithms are highly accurate but affected by denoising and sampling scheme
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
